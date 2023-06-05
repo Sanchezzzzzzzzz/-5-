@@ -36,4 +36,33 @@ int SumEl(int[] array1){
 Console.WriteLine("Сумма элементов на нечётных позициях:");
 Console.WriteLine(SumEl(array1));
 Console.WriteLine();
+// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+double[] MakeArray(int size){
+    double[] res = new double[size];
+    for(int i =0; i<size; i++){
+        res[i]=new Random().Next();
+        Console.Write($"{res[i]}");
+        Console.WriteLine();
+    }
+    return res;
+}
+double[] array2 = MakeArray(10);
+Console.WriteLine();
+double MinMaxEl(double[] array2){
+    double minn = array2[0];
+    double maxx = array2[0];
+    foreach(double el in array){
+        if(el<minn){
+            minn=el;
+        }
+        if(el>maxx){
+            maxx=el;
+        }
+    }
+    double ans=maxx-minn;
+    return ans;
+}
+Console.WriteLine("Разность минимального и максимального:");
+Console.WriteLine(MinMaxEl(array2));
+
 
