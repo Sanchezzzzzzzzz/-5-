@@ -20,7 +20,9 @@ int qua(int[] array){
     }
     return quaEven;
 }
-Console.WriteLine("Количество чётных элементов:", qua(array));
+Console.WriteLine("Количество чётных элементов:");
+Console.WriteLine(qua(array));
+Console.WriteLine();
 //Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 int[] array1 = GetArray(10, 1, 100);
 Console.WriteLine();
@@ -31,4 +33,7 @@ int SumEl(int[] array1){
     }
     return sumOdd;
 }
-Console.WriteLine("Сумма элементов на нечётных позициях:", SumEl(array1));
+Console.WriteLine("Сумма элементов на нечётных позициях:");
+Console.WriteLine(SumEl(array1));
+Console.WriteLine();
+
