@@ -5,6 +5,7 @@ int[] GetArray(int size, int minValue, int maxValue){
     for(int i =0; i<size; i++){
         res[i]=new Random().Next(minValue, maxValue+1);
         Console.Write($"{res[i]}");
+        Console.WriteLine();
     }
     return res;
 }
@@ -20,4 +21,5 @@ int qua(int[] array){
     return quaEven;
 }
 Console.WriteLine(qua(array));
+//Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
